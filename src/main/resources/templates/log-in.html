@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log-in</title>
+    <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
+
+</head>
+<body>
+    <section class="content">
+        <h1>Log in to interact with your wishlist</h1>
+        <form method="POST" action="/verify">
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username"/>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password"/>
+            <input type="submit"/>
+
+        </form>
+        <a href="/sign-up">Click here to sign up!</a>
+
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    background-color: azure;
+    font-size:1.5rem;
+    height: 95vh;
+    width: 99vw;
+    font-family:"calibri", sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+h1 {
+    color: deepskyblue;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    width:50%;
+    height:50%;
+    border-radius:10px;
+}
+
+.home {
+
+}
+
+.wish-list {
+    background-color: lavender;
+}

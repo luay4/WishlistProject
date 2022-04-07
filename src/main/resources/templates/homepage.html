@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
+
+</head>
+<body>
+<section class="content">
+    <form method="POST" action="/log-out">
+        <input type="submit" value="Log out"/>
+    </form>
+    <h1>Welcome back</h1>
+    <p>Submit a wish to your wishlist</p>
+    <form method="POST" action="/submit-wish">
+        <label for="wish">Wish</label>
+        <input id="wish" type="text" name="wish"/>
+        <input type="submit"/>
+    </form>
+
+
+    <ul th:each="wish : ${wishes}">
+        <li th:text="${wish}"></li>
+    </ul>
+</section>
+
+</body>
+</html>

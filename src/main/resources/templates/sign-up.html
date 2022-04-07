@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
+
+</head>
+<body>
+<section class="content">
+    <h1>Sign up to create your wishlist</h1>
+    <form method="POST" action="/validate">
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username"/>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password"/>
+        <input type="submit"/>
+    </form>
+</section>
+
+</body>
+</html>
